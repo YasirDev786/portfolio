@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <style>
+        body { 
+  background: linear-gradient(45deg, #060505, #000000);
+  color: white;
+}
+      button {
+        background-color: red;
+        color: white;
+        padding: 1rem;
+        border: none;
+        border-radius: 0.2rem;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav">
+      <div class="logo">
+        <h1>YasirPort</h1>
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li>Projects</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="left">
+        <h1>Yasir Imran</h1>
+        <p>My name is Yasir Imran. I am a Software Developer.</p>
+        <button>Get a Quote</button>
+      </div>
+      <div class="right">
+        <picture>
+          <img
+            src="Yasir.jpg"
+            loading="lazy"
+            alt="Yasir"
+            width="300px"
+            height="300px"
+          />
+        </picture>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <h1>Skills:</h1>
+    <ul>
+      <li>HTML</li>
+      <li><strong>CSS3</strong></li>
+    </ul>
+    <ol>
+      <li>Learn</li>
+      <li>Practice</li>
+    </ol>
+    <dl>
+      <dt>HTML</dt>
+      <dd>HTML is a Markup language.</dd>
+    </dl>
+
+    <!-- Education -->
+
+    <table>
+      <caption>
+        Education
+      </caption>
+      <thead>
+        <tr>
+          <th>Class</th>
+          <th>Schooling</th>
+          <th>Marks</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1 to 6</td>
+          <td>Millat School</td>
+          <td>Good</td>
+        </tr>
+        <tr>
+          <td>7 to 10</td>
+          <td>GOVT P.B Model High School</td>
+          <td>97%</td>
+        </tr>
+        <tr>
+          <td>11 & 12</td>
+          <td>Punjab Group of College</td>
+          <td>93%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Video Lecture -->
+
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/G3e-cpL7ofc?si=NhVh6HbpA363jsEV"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <!-- Contact Form -->
+
+    <form action="" method="post">
+      <fieldset>
+        <legend>Contact Me</legend>
+
+        <div>
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Yasir Imran"
+            required
+          />
+        </div>
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="example@gmail.com"
+            required
+          />
+        </div>
+        <div>
+          <label for="gender">Gender:</label>
+
+          <label for="male">
+            <input
+              type="radio"
+              name="gender"
+              id="male"
+              value="Male"
+            />Male</label
+          >
+
+          <label for="female">
+            <input
+              type="radio"
+              name="gender"
+              id="female"
+              value="Female"
+            />Female</label
+          >
+        </div>
+        <div>
+          <label for="hobbies">Hobbies:</label>
+
+          <label for="Programming">
+            <input
+              type="checkbox"
+              name="hobby"
+              value="Programming"
+              checked
+            />Programming</label
+          >
+
+          <label for="Cricket"
+            ><input
+              type="checkbox"
+              name="hobby"
+              value="Cricket"
+            />Cricket</label
+          >
+
+          <label for="Reading"
+            ><input
+              type="checkbox"
+              name="hobby"
+              value="Reading"
+            />Reading</label
+          >
+        </div>
+        <div>
+          <label for="dob">Date of Birth</label>
+          <input type="date" />
+        </div>
+        <div>
+          <input type="range" min="0" max="100" value="50" />
+        </div>
+        <div>
+          <label for="uni"> Select University </label>
+          <select name="university" id="university">
+            <option value="pu" id="pu" selected>Punjab University</option>
+            <option value="pu" id="uet">UET</option>
+            <option value="pu" id="pu">Punjab College</option>
+          </select>
+        </div>
+        <div>
+          <label for="pic">Upload Your Picture</label>
+          <input type="file" name="pic" id="pic" />
+        </div>
+        <div>
+          <button type="submit">Submit</button>
+          <button type="reset">Clear</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
